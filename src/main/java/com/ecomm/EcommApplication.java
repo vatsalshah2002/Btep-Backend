@@ -17,7 +17,7 @@ public class EcommApplication {
 	@Bean
 	public CorsFilter corsFilter() {
 	    CorsConfiguration config = new CorsConfiguration();
-	    config.addAllowedOrigin("*"); // You can replace * with specific origins allowed
+	    config.addAllowedOrigin("https://ecommercebtep-git-master-vatsal-s-projects.vercel.app/"); // You can replace * with specific origins allowed
 	    config.addAllowedMethod("*"); // Allow all HTTP methods
 	    config.addAllowedHeader("*"); // Allow all headers
 
