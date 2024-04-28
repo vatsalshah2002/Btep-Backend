@@ -24,10 +24,12 @@ import com.ecomm.service.CartService;
 import com.ecomm.service.CustomUserServiceImplementation;
 
 import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "*")
+
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 public class AuthController {
 	
 
